@@ -4,4 +4,19 @@ p:hover {
 }
 
 
-p
+p::before {
+  content: 'Hello ';
+  color: blue;
+  font-weight: bold;
+}
+
+p::after {
+  content: 'Bye!';
+  color: red;
+  font-weight: bold;
+}
+
+p::selection {
+  background-color: purple;
+  color: white;
+}
