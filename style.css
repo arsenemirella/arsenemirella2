@@ -84,7 +84,22 @@ h3 {
 }
 
 img {
-  width: 100%;
+  width: 300px;
+  filter: grayscale(5%) invert(2%) ; 
+}
 
-  filter: grayscale(100%) invert(100%) ; 
+img#mirella:hoover {
+    height: 300px;
+    width: auto;
+    filter: invert(0%);
+}
+.filtered-image {
+    filter: invert(0%);
+    animation: invertAnimation 2s forwards; /* Use the animation with keyframes */
+}
+
+@keyframes invertAnimation {
+    to {
+        filter: invert(100%);
+    }
 }
