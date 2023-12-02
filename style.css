@@ -147,5 +147,32 @@ h3 {
   object-fit: cover;
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
+
+.album-box {
+  background-color: lavender;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.album-box p {
+  margin: 0;
+}
+
+.none {
+  display: none;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
 
 
