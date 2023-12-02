@@ -7,7 +7,7 @@ body {
 }
 
 .nav-bar {
-    background-color: Lavender ;
+    background-color: Lavender;
     overflow: hidden;
     margin-bottom: 20px;
 }
@@ -15,18 +15,17 @@ body {
 .nav-bar a {
     float: left;
     display: block;
-    color: Indigo ;
+    color: Indigo;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .nav-bar a:hover {
-    background-color: LightGrey ;
-    color: Indigo ;
+    background-color: LightGrey;
+    color: Indigo;
 }
 
-/* Paint me! styles */
 .paint::before {
     content: "GOJO IS ALIVE";
     color: DarkSlateBlue;
@@ -35,7 +34,7 @@ body {
 
 .paint:hover::before {
     content: "HUH? why did you change?";
-    color:DarkSlateBlue ; 
+    color: DarkSlateBlue;
 }
 
 .paint::after {
@@ -46,11 +45,10 @@ body {
 
 .paint {
     background-color: white;
-    color: DarkSlateBlue ;
+    color: DarkSlateBlue;
     padding: 5px;
 }
 
-/* Visibility property */
 .visible {
     visibility: visible;
 }
@@ -59,7 +57,6 @@ body {
     visibility: hidden;
 }
 
-/* Opacity */
 .op_1 {
     opacity: 1;
 }
@@ -72,19 +69,8 @@ body {
     opacity: 0.5;
 }
 
-/* Display */
-.none {
-    display: none;
-    font-weight: bold;
-}
-
-.inline {
+.none, .inline, .block {
     display: inline;
-    font-weight: bold;
-}
-
-.block {
-    display: block;
     font-weight: bold;
 }
 
@@ -107,7 +93,7 @@ h3 {
 
 .image {
     transition: width 5s; /* Transition for width property */
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .center {
@@ -118,9 +104,6 @@ h3 {
     filter: grayscale(100%);
     filter: brightness(0.5);
 }
-/* style.css */
-
-/* style.css */
 
 @keyframes shadow-drop-2-center {
   0% {
@@ -129,7 +112,7 @@ h3 {
   }
   100% {
     transform: translateZ(50px);
-    box-shadow: 0 0 20px "Dark Cyan";
+    box-shadow: 0 0 20px DarkCyan;
   }
 }
 
@@ -147,10 +130,6 @@ h3 {
   object-fit: cover;
 }
 
-body {
-  font-family: Arial, sans-serif;
-}
-
 .album-box {
   background-color: lavender;
   padding: 10px;
@@ -161,18 +140,3 @@ body {
 .album-box p {
   margin: 0;
 }
-
-.none {
-  display: none;
-}
-
-.inline {
-  display: inline;
-}
-
-.block {
-  display: block;
-}
-
-
-
