@@ -105,38 +105,25 @@ h3 {
     filter: brightness(0.5);
 }
 
-@keyframes shadow-drop-2-center {
-  0% {
-    transform: translate(0.5px);
-    box-shadow: 0 0 10px Cyan;
-  }
-  100% {
-    transform: translateZ(50px);
-    box-shadow: 0 0 20px DarkCyan;
-  }
-}
+ @keyframes invertColor {
+      0% {
+        filter: invert(0);
+      }
+      100% {
+        filter: invert(1);
+      }
+    }
 
-.animated-box {
-  width: 70px; /* Adjust the width as needed */
-  height: 50px;
-  position: relative;
-  overflow: hidden;
-  animation: shadow-drop-2-center 3s infinite alternate; /* Adjust duration and other properties as needed */
-}
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: #333;
+    }
 
-.animated-box img {
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
-}
-
-.album-box {
-  background-color: lavender;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
-
-.album-box p {
-  margin: 0;
-}
+    img {
+      animation: invertColor 5s infinite alternate;
+    }
