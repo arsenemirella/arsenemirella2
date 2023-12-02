@@ -122,33 +122,29 @@ h3 {
 
 /* style.css */
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@keyframes shadow-drop-2-center {
+  0% {
+    transform: translate(0.5px);
+    box-shadow: 0 0 10px Cyan;
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px "Dark Cyan";
+  }
 }
 
-.image {
-    transition: width 5s; /* Transition for width property */
-    cursor: pointer;
+.animated-box {
+  width: 300px; /* Adjust the width as needed */
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  animation: shadow-drop-2-center 3s infinite alternate; /* Adjust duration and other properties as needed */
 }
 
-.image:hover {
-    width: 800px; /* Change the width on hover */
+.animated-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.center {
-    text-align: center;
-}
 
-.image {
-    filter: grayscale(100%);
-    filter: brightness(0.5);
-}
-
-.image-animated {
-    animation: fadeIn 1s ease-in-out;
-}
