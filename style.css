@@ -1,105 +1,154 @@
-p:hover {
-  color: 6537FF;
-  font-weight: bold;
+body {
+    background-color: DarkSlateBlue;
+    color: black;
+    font-family: 'Century Gothic', sans-serif;
+    margin: 20px;
+    padding: 20px;
 }
 
-
-p::before {
-  content: 'Hello ';
-  color: blue;
-  font-weight: bold;
+.nav-bar {
+    background-color: Lavender ;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
-p::after {
-  content: 'Bye!';
-  color: red;
-  font-weight: bold;
+.nav-bar a {
+    float: left;
+    display: block;
+    color: Indigo ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-p::selection {
-  background-color: purple;
-  color: white;
+.nav-bar a:hover {
+    background-color: LightGrey ;
+    color: Indigo ;
 }
-/*Visibility property*/
-.visible
-{
-  visibility: visible;
+
+/* Paint me! styles */
+.paint::before {
+    content: "GOJO IS ALIVE";
+    color: DarkSlateBlue;
+    font-weight: bold;
 }
+
+.paint:hover::before {
+    content: "HUH? why did you change?";
+    color:DarkSlateBlue ; 
+}
+
+.paint::after {
+    content: "okay bro";
+    color: DarkViolet;
+    font-weight: bold;
+}
+
+.paint {
+    background-color: white;
+    color: DarkSlateBlue ;
+    padding: 5px;
+}
+
+/* Visibility property */
+.visible {
+    visibility: visible;
+}
+
 .hidden {
-  visibility:hidden;
+    visibility: hidden;
 }
+
 /* Opacity */
 .op_1 {
-  opacity: 1;
-}
-op_0 {
-  opacity: 0;
-}
-.op_5 {
-  opacity: 0.5;
-}
-/* Display */
-.none {
-  display: none;
-  font-weight: bold;
-}
-.inline {
-  display: inline;
-  font-weight: bold;
-}
-.block {
-  display: block;
-  font-wheight: bold;
-}
-h3 {
-  background-color: salmon;
-  text-align: center;
-}
-* {
-  padding: 0;
-  margin: 0;
+    opacity: 1;
 }
 
-.nav {
-  background-color: rgb(141, 223, 255)
-  height: 20px;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 10px;
+.op_0 {
+    opacity: 0;
+}
+
+.op_05 {
+    opacity: 0.5;
+}
+
+/* Display */
+.none {
+    display: none;
+    font-weight: bold;
+}
+
+.inline {
+    display: inline;
+    font-weight: bold;
+}
+
+.block {
+    display: block;
+    font-weight: bold;
+}
+
+h3 {
+    background-color: pink;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    width: 100%;
 }
 
 .banner {
-  background-color: rgb(141, 145, 255);
-  height: 200px;
-}
-.content {
-  background-color: rgb(122, 77, 255)
-  height: 400px;
+    background-color: rgb(255, 20, 147);
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-.footer {
-  background-color: rgb(3, 1, 7);
-  height: 20px;
-  height: 100px;
+.image {
+    transition: width 5s; /* Transition for width property */
+    cursor: pointer; 
 }
 
-img {
-  width: 300px;
-  filter: grayscale(5%) invert(2%) ; 
+.center {
+    text-align: center;
 }
 
-img#mirella:hoover {
-    height: 300px;
-    width: auto;
-    filter: invert(0%);
+.image {
+    filter: grayscale(100%);
+    filter: brightness(0.5);
 }
-.filtered-image {
-    filter: invert(0%);
-    animation: invertAnimation 2s forwards; /* Use the animation with keyframes */
-}
+/* style.css */
 
-@keyframes invertAnimation {
-    to {
-        filter: invert(100%);
+/* style.css */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
+    to {
+        opacity: 1;
+    }
+}
+
+.image {
+    transition: width 5s; /* Transition for width property */
+    cursor: pointer;
+}
+
+.image:hover {
+    width: 800px; /* Change the width on hover */
+}
+
+.center {
+    text-align: center;
+}
+
+.image {
+    filter: grayscale(100%);
+    filter: brightness(0.5);
+}
+
+.image-animated {
+    animation: fadeIn 1s ease-in-out;
 }
