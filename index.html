@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet" >
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>Visibility</title>
-    <link rel="stylesheet"href="style.css">
- </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tehehe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+
 <body>
-  <p>give me some color!</p>
-  <h3>Visibility property</h3>
-  <p class="visible">visible</p>
-  <p class="hidden">hidden</p>
+    <div class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
-  <br><br><br>
-  <h3>Opacity</h3>
-  <p class="op_1">Opacity 1</p>
-  <p class="op_0">Opacity 0</p>
-  <p class="op_05">Opacity 0.5</p>
+    <div class="container">
+        <div class="banner center">
+            <h1>What?</h1>
+        </div>
 
-  <br><br><br>
-  <h3>Display</h3>
-  <p>uhm guys is this freddy fazbear?<span class="none">Am i visible</span>Display: none</p>
-  <p>uhm guys is this freddy fazbear?<span class="inline">Am i visible</span>Display: none</p>
-  <p>uhm guys is this freddy fazbear?<span class="block">Am i visible</span>Display: none</p>
+        <div class="content">
+            <p>Alls wells definitely end well</p>
+        </div>
 
-  <div class="nav">
-    <a href="#">Home</a>
-     <a href="#">About</a>
-     <a href="#">Conact</a>
-  </div>
+        <img src="https://www.udiscovermusic.com/wp-content/uploads/2021/12/The-Weeknd-Getty-1320403869-copy-1000x600.jpg" alt="Abel and Ariana concert" class="image image-animated">
+        <div class="center">
+            <p>Additional centered text.</p>
+        </div>
 
-  <div class="banner">
-    <img src="https://res.cloudinary.com/calm-com/image/upload/v1582139698/jasper-lake.jpg">
-  </div>
+        <button type="button" class="btn btn-Abel"> Abel </button>
+        <button type="button" class="btn btn-Tesfaye"> Tesfaye </button>
+        <button type="button" class="btn btn-TheWeeknd"> TheWeeknd </button>
+        <button type="button" class="btn btn-DawnTour"> DawnTour </button>
+        <button type="button" class="btn btn-After"> After </button>
+        <button type="button" class="btn btn-Hours"> Hours </button>
+        <button type="button" class="btn btn-Beauty"> Beauty </button>
+        <button type="button" class="btn btn-Madness"> Madness </button>
+    </div>
 
-  <div class="content">
-    
-  </div>
-     
-  <div class="footer">
-    
-  </div>
+    <p class="paint">Paint me!</p>
+
+    <h3>Song Visibility</h3>
+    <p class="visible">House of Balloons</p>
+    <p class="hidden">Trilogy</p>
+    <br><br><br>
+
+    <h3>Album Opacity</h3>
+    <p class="op_1">After Hours</p>
+    <p class="op_0">Starboy</p>
+    <p class="op_05">Kiss Land</p>
+    <br><br>
+
+    <h3>Album Display</h3>
+    <p>Favorite album: <span class="none">Trilogy</span> Display: none</p>
+    <p>Favorite album: <span class="inline">Starboy</span> Display: inline</p>
+    <p>Favorite album: <span class="block">DawnFM</span> Display: block</p>
+
+    <script>
+        const img = document.querySelector('.image');
+        img.addEventListener('click', () => {
+            img.style.width = '800px';
+        });
+    </script>
 </body>
+
 </html>
